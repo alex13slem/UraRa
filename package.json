@@ -1,0 +1,69 @@
+{
+  "name": "gulp2022",
+  "version": "1.0.0",
+  "description": "Basic template for GULP",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build",
+    "zip": "gulp deployZIP --build",
+    "ftp": "gulp deployFTP --build",
+    "svgSprive": "gulp svgSprive"
+  },
+  "author": "FLS",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@splidejs/splide": "^4.0.7",
+    "@splidejs/splide-extension-grid": "^0.4.1",
+    "choices.js": "^10.1.0",
+    "gulp": "^4.0.2",
+    "nouislider": "^15.6.0",
+    "parallax-js": "^3.1.0",
+    "wnumb": "^1.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "fs": "latest",
+    "fslightbox": "^3.3.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-file-include": "latest",
+    "gulp-fonter": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-ttf2woff2": "latest",
+    "gulp-util": "latest",
+    "gulp-version-number": "latest",
+    "gulp-webp": "latest",
+    "gulp-webp-html-nosvg": "latest",
+    "gulp-webpcss": "latest",
+    "gulp-zip": "latest",
+    "replace": "latest",
+    "sass": "latest",
+    "swiper": "latest",
+    "vinyl-ftp": "latest",
+    "webp-converter": "2.2.3",
+    "webpack": "latest",
+    "webpack-stream": "latest",
+    "ymaps": "^0.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex13slem/GalactigunSchool-SITE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alex13slem/GalactigunSchool-SITE/issues"
+  },
+  "homepage": "https://github.com/alex13slem/GalactigunSchool-SITE#readme"
+}

@@ -1,0 +1,30 @@
+.body-wrap {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+[class*="__wrap"] {
+	max-width: calc($wrap_max-w + 32px);
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+// [class*="__out-wrap"] {
+// 	max-width: $out-wrap_max-w;
+// 	margin-right: auto !important;
+// 	margin-left: auto !important;
+// }
+
+body,
+a,
+input,
+button,
+textarea {
+	font-family: $font-family;
+	font-size: $font-size;
+	font-weight: 400;
+	color: $font-color_main;
+	scroll-behavior: smooth;
+}

@@ -140,7 +140,8 @@
 		align-items: center;
 		justify-content: center;
 
-		img {
+		& > img,
+		& > picture {
 			flex: 0 0 519px;
 			margin-left: -340px;
 			margin-left: -17.5vmax;
@@ -387,14 +388,13 @@
 }
 
 .sect-buy {
-	z-index: -2;
+	overflow: hidden;
 	position: relative;
 	background: url("@img/sect-title/bg-buy.png") 0 100% / 100% 948px no-repeat;
 	padding-top: 50px;
 	padding-bottom: 90px;
 	&::after,
 	&::before {
-		z-index: -1;
 		position: absolute;
 		content: "";
 		bottom: -745px;
@@ -410,6 +410,8 @@
 		right: calc(50% - 1695px);
 	}
 	&__wrap {
+		position: relative;
+		z-index: 1;
 	}
 	h3 {
 		margin: 0 auto 25px;
@@ -514,7 +516,7 @@
 		}
 		transition: box-shadow 0.3s ease;
 		&:hover {
-			box-shadow: 2px 4px 20px 6px rgb(255, 255, 255);
+			box-shadow: 2px 4px 20px 6px #3a3a3a4f;
 		}
 	}
 	.tarif-lite {
@@ -526,5 +528,51 @@
 	}
 	.tarif-pro {
 		background: url("@img/sect-title/bg-tariff2.png") 0 0 / cover no-repeat;
+	}
+}
+
+.sect-contant {
+	padding-top: 100px;
+	padding-bottom: 110px;
+
+	&__title {
+		margin-bottom: 50px;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 72%;
+		text-align: center;
+	}
+	&__item {
+		margin-bottom: 50px;
+		position: relative;
+		padding-left: 100px;
+		h4 {
+			margin-bottom: 20px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 108%;
+		}
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			font-weight: 900;
+			font-size: 64px;
+			line-height: 78px;
+			/* identical to box height */
+
+			text-transform: uppercase;
+
+			background: linear-gradient(10.33deg, #e98f0a 13.18%, #ffeb3a 52.62%, #fff7cd 75.73%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+		}
+	}
+	&__btn-up {
+		display: flex;
+		justify-content: flex-end;
 	}
 }
